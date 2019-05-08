@@ -52,11 +52,20 @@ function sumNums(x, y, cb) {
   cb(x + y);
 }
 
-function printSum
+function printSum(sum) {
+  console.log(sum);
+}
+
+sumNums(2, 3, printSum);
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  cb(x * y);
 }
+
+printProduct = (product) => { console.log(product); }
+
+multiplyNums(2, 3, printProduct);
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
